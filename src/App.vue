@@ -11,11 +11,8 @@ export default {
   name: "App",
   components: {},
   computed: {
-    currentDate() {
-      return moment().format("DD/MM");
-    },
     isLaraBirthday() {
-      return this.currentDate == "02/07";
+      return moment().format("DD/MM") === "02/07";
     },
   },
 };
